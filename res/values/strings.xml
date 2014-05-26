@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes_2</string>
+    <string name="login_headtext">Enter login and password pls:</string>
+    <string name="login_lhint">login</string>
+    <string name="login_phint">password</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_demo_text">Demo</string>
+</resources>
