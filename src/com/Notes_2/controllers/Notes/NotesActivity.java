@@ -1,4 +1,4 @@
-package com.Notes_2.controllers;
+package com.Notes_2.controllers.Notes;
 
 import android.app.Activity;
 
