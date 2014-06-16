@@ -9,4 +9,6 @@
     <string name="register_text">Registering new user:</string>
     <string name="register_passrephint">pass again</string>
     <string name="register_button">Register</string>
+    <string name="user_exist_message">user already exist</string>
+    <string name="short_password_message">Password is too short</string>
 </resources>

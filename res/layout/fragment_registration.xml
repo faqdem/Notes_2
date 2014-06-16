@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/login_phint"
             android:layout_marginBottom="@dimen/login_vertical_margin"
+            android:inputType="textPassword"
             />
     <EditText
             android:id="@+id/register_passrep"
@@ -34,6 +35,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/register_passrephint"
             android:layout_marginBottom="@dimen/login_vertical_margin"
+            android:inputType="textPassword"
             />
     <Button
             android:id="@+id/register_button"
