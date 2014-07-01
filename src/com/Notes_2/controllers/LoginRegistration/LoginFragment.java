@@ -63,6 +63,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             Toast.makeText(getActivity(), e.getResult().toString(), Toast.LENGTH_SHORT).show();
             return;
         }
+
         startActivity(new Intent(getActivity(), NotesActivity.class));
     }
 

@@ -7,19 +7,25 @@ public class User {
     private String name;
     private String password;
 
-    User(String name, String pass)
-    {
+    User(String name, String pass) {
         this.name = name;
         this.password = pass;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return this.name;
     }
 
-    public String getPassword()
-    {
+    public String getPassword() {
         return this.password;
     }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }

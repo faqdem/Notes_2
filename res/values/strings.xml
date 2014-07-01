@@ -11,4 +11,9 @@
     <string name="register_button">Register</string>
     <string name="user_exist_message">user already exist</string>
     <string name="short_password_message">Password is too short</string>
+    <string name="passchange_text">Changing password:</string>
+    <string name="passchange_oldpass">old password</string>
+    <string name="passchange_newpass">new password</string>
+    <string name="passchange_repeat">repeat password</string>
+    <string name="passchange_buttext">Change</string>
 </resources>

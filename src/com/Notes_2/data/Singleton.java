@@ -11,6 +11,7 @@ public class Singleton {
     public static final String DEMO_PASSWORD = "1234";
 
     private static Singleton sInstance;
+    private User tempUser;
 
     private Singleton(){
 
@@ -45,6 +46,7 @@ public class Singleton {
         for (User user : usersList) {
             if (user.getName().equals(name)) {
                 if (user.getPassword().equals(pass)) {
+                    tempUser = user;
                     return;
                 } else {
                     throw new LoginException(LoginException.Result.WRONG_PASSWORD);
@@ -66,4 +68,11 @@ public class Singleton {
         else throw new RegistrationException(RegistrationException.Result.SHORT_PASSWORD);
     }
 
+    public void changePassword(){
+
+    }
+
+    public void logOut(){
+
+    }
 }
