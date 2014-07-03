@@ -38,7 +38,7 @@ public class RegistrationFragment extends Fragment implements View.OnClickListen
             Singleton.getInstance().register(login,pass);
             Toast.makeText(getActivity(), "Registration successful!",Toast.LENGTH_SHORT).show();
         } catch (RegistrationException e) {
-            Toast.makeText(getActivity(), login + " " + e.getResult().getMessageRes(),Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), e.getResult().getMessageRes(),Toast.LENGTH_SHORT).show();
         }
 
     }

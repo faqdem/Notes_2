@@ -68,11 +68,17 @@ public class Singleton {
         else throw new RegistrationException(RegistrationException.Result.SHORT_PASSWORD);
     }
 
-    public void changePassword(){
-
+    public void changePassword(String oldPassword,String newPassword) throws LoginException{
+        if(tempUser.getPassword().equals(oldPassword))
+        {
+            tempUser.setPassword(newPassword);
+        }
+        else {
+            throw new LoginException(LoginException.Result.WRONG_PASSWORD);
+        }
     }
 
     public void logOut(){
-
+        tempUser = null;
     }
 }

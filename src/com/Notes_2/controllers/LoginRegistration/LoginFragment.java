@@ -60,7 +60,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             Singleton.getInstance().login(login, password);
         } catch (LoginException e) {
             // TODO Auto-generated catch block
-            Toast.makeText(getActivity(), e.getResult().toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), e.getResult().getMessageRes(), Toast.LENGTH_SHORT).show();
             return;
         }
 

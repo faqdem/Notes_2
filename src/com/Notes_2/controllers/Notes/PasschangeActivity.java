@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import com.Notes_2.R;
+import com.Notes_2.data.LoginException;
+import com.Notes_2.data.Singleton;
 
 /**
  * Created by student on 7/1/14.
@@ -25,9 +27,17 @@ public class PasschangeActivity extends Activity implements View.OnClickListener
 
     @Override
     public void onClick(View view) {
-        String oldpass = ((EditText)(view.findViewById(R.id.passchange_oldpass))).getText().toString();
-        String newpass = ((EditText)(view.findViewById(R.id.passchange_newpass))).getText().toString();
-        String repeatpass = ((EditText)(view.findViewById(R.id.passchange_repeat))).getText().toString();
-        //TODO:
+        String oldpass = ((EditText) (view.findViewById(R.id.passchange_oldpass))).getText().toString();
+        String newpass = ((EditText) (view.findViewById(R.id.passchange_newpass))).getText().toString();
+        String repeatpass = ((EditText) (view.findViewById(R.id.passchange_repeat))).getText().toString();
+
+        if (newpass.equals(repeatpass)) {
+
+            try {
+                Singleton.getInstance().changePassword(oldpass, newpass);
+            } catch (LoginException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

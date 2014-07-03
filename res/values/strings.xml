@@ -16,4 +16,6 @@
     <string name="passchange_newpass">new password</string>
     <string name="passchange_repeat">repeat password</string>
     <string name="passchange_buttext">Change</string>
+    <string name="wrong_password_message">Password is wrong</string>
+    <string name="used_notfnd_message">User was not found</string>
 </resources>
